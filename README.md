@@ -1,47 +1,39 @@
- sst-system
-Sistema de gerenciamento SST desenvolvido com PostgreSQL, Power BI e Power Apps.
+sst-system
 
- SST System - Dashboard Executivo de Segurança e Saúde do Trabalho
+SST System - Dashboard Executivo de Segurança e Saúde do Trabalho
 
- Visão Geral
-
+Visão Geral
 O SST System é uma solução analítica desenvolvida para apoiar a gestão de Segurança e Saúde do Trabalho (SST), consolidando indicadores operacionais e gerenciais em um ambiente único de análise.
 
-O projeto integra para monitoramento de:
-  Treinamentos obrigatórios
-  Controle de EPIs
-  Inspeções de Segurança
-  Não Conformidades
-  Indicadores de Risco SST
+- O projeto integra para monitoramento de:
+Treinamentos obrigatórios
+Controle de EPIs
+Inspeções de Segurança
+Não Conformidades
+Indicadores de Risco SST
 
- Objetivo
-Fornecer aos gestores uma visão consolidada da conformidade SST da organização, permitindo identificar riscos, acompanhar indicadores críticos e apoiar a tomada de decisão baseada em dados.
+- Objetivo: Fornecer aos gestores uma visão consolidada da conformidade SST da organização, permitindo identificar riscos, acompanhar indicadores críticos e apoiar a tomada de decisão baseada em dados.
 
- Tecnologias Utilizadas
-  PostgreSQL
-  Power BI
+- Tecnologias Utilizadas: PostgreSQL e Power BI
 
- Modelagem
-  Modelo Relacional
-  Views SQL para consolidação dos dados
-  Medidas DAX
+- Modelagem: Modelo Relacional, Views SQL para consolidação dos dados e Medidas DAX
 
- Estrutura do Banco
+- Estrutura do Banco
 Tabelas Principais
-  clientes
-  colaboradores
-  treinamentos
-  epis
-  inspecoes
-  nao_conformidades
+clientes
+colaboradores
+treinamentos
+epis
+inspecoes
+nao_conformidades
 
-Views Analíticas
-  vw_treinamentos
-  vw_epis
-  vw_inspecoes
-  vw_nao_conformidades
+- Views Analíticas
+vw_treinamentos
+vw_epis
+vw_inspecoes
+vw_nao_conformidades
 
- Indicadores Desenvolvidos
+- Indicadores Desenvolvidos
 Treinamentos
   Total de Treinamentos
   Treinamentos Vigentes
@@ -75,7 +67,7 @@ Painel Gerencial
   Maturidade SST por Pilar
   Ranking de Risco SST por Cliente
 
- Estrutura do Dashboard
+- Estrutura do Dashboard
 Página 1 - Visão Executiva SST
 Visão consolidada dos principais indicadores da operação.
 
@@ -101,8 +93,7 @@ Visão executiva consolidada para apoio à tomada de decisão.
   Acompanhamento da evolução das não conformidades.
   Priorização de ações corretivas com base em criticidade.
 
- Autor
-Gabriel Sobreira
+- Autor: Gabriel Sobreira
 
 Projeto desenvolvido para fins de estudo, portfólio e demonstração de competências em SQL, PostgreSQL, Power BI, Modelagem de Dados e Business Intelligence.
 
