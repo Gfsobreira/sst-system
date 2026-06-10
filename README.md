@@ -1,99 +1,104 @@
-sst-system
+# SST System
 
-SST System - Dashboard Executivo de Segurança e Saúde do Trabalho
+Dashboard Executivo de Segurança e Saúde do Trabalho desenvolvido com PostgreSQL, SQL, Power BI e DAX.
 
-Visão Geral
-O SST System é uma solução analítica desenvolvida para apoiar a gestão de Segurança e Saúde do Trabalho (SST), consolidando indicadores operacionais e gerenciais em um ambiente único de análise.
+## Visão Geral
 
-- O projeto integra para monitoramento de:
-Treinamentos obrigatórios
-Controle de EPIs
-Inspeções de Segurança
-Não Conformidades
-Indicadores de Risco SST
+O SST System foi desenvolvido com o objetivo de consolidar informações relacionadas à gestão de Segurança e Saúde do Trabalho em um único ambiente analítico.
 
-- Objetivo: Fornecer aos gestores uma visão consolidada da conformidade SST da organização, permitindo identificar riscos, acompanhar indicadores críticos e apoiar a tomada de decisão baseada em dados.
+O projeto permite acompanhar indicadores operacionais e gerenciais relacionados a treinamentos obrigatórios, controle de EPIs, inspeções de segurança e não conformidades, apoiando o processo de tomada de decisão por meio de dados.
 
-- Tecnologias Utilizadas: PostgreSQL e Power BI
+## Tecnologias Utilizadas
 
-- Modelagem: Modelo Relacional, Views SQL para consolidação dos dados e Medidas DAX
+* PostgreSQL
+* SQL
+* Power BI
+* DAX
+* GitHub
 
-- Estrutura do Banco
-Tabelas Principais
-clientes
-colaboradores
-treinamentos
-epis
-inspecoes
-nao_conformidades
+## Estrutura do Projeto
 
-- Views Analíticas
-vw_treinamentos
-vw_epis
-vw_inspecoes
-vw_nao_conformidades
+O projeto está organizado nas seguintes pastas:
 
-- Indicadores Desenvolvidos
-Treinamentos
-  Total de Treinamentos
-  Treinamentos Vigentes
-  Treinamentos Vencidos
-  Treinamentos a Vencer
-  Percentual de Conformidade
+* images: capturas das páginas do dashboard
+* powerbi: arquivo PBIX do projeto
+* sql: scripts de criação das tabelas, views e consultas analíticas
 
-EPIs
-  Total de EPIs
-  EPIs Válidos
-  EPIs Vencidos
-  EPIs a Vencer
-  Percentual de Conformidade
+## Modelagem de Dados
 
-Inspeções
-  Total de Inspeções
-  Inspeções Conformes
-  Inspeções Não Conformes
-  Índice de Qualidade das Inspeções
+A estrutura foi desenvolvida utilizando um modelo relacional composto pelas entidades:
 
-Não Conformidades
-  Total de NCs
-  NCs Abertas
-  NCs Em Andamento
-  NCs Atrasadas
-  NCs Críticas
-  Índice de Risco SST
+* Clientes
+* Colaboradores
+* Treinamentos
+* EPIs
+* Inspeções
+* Não Conformidades
 
-Painel Gerencial
-  Índice SST Global
-  Maturidade SST por Pilar
-  Ranking de Risco SST por Cliente
+Além das tabelas principais, foram utilizadas views SQL para consolidação e preparação dos dados consumidos pelo Power BI.
 
-- Estrutura do Dashboard
-Página 1 - Visão Executiva SST
-Visão consolidada dos principais indicadores da operação.
+## Funcionalidades
 
-Página 2 - Gestão de Treinamentos
-Monitoramento de treinamentos obrigatórios e conformidade.
+O dashboard contempla os seguintes módulos:
 
-Página 3 - Gestão de EPIs
-Controle de validade, vencimentos e conformidade dos equipamentos.
+### Visão Executiva SST
 
-Página 4 - Gestão de Inspeções
-Acompanhamento dos resultados das inspeções de segurança.
+Acompanhamento consolidado dos principais indicadores de Segurança e Saúde do Trabalho.
 
-Página 5 - Gestão de Não Conformidades
-Gestão de criticidade, status e riscos operacionais.
+### Gestão de Treinamentos
 
-Página 6 - Painel Gerencial SST
-Visão executiva consolidada para apoio à tomada de decisão.
+Monitoramento de treinamentos vigentes, vencidos e próximos do vencimento.
 
- Principais Insights Gerados
-  Identificação dos clientes com maior exposição ao risco SST.
-  Monitoramento da conformidade por pilar operacional.
-  Controle de vencimentos de treinamentos e EPIs.
-  Acompanhamento da evolução das não conformidades.
-  Priorização de ações corretivas com base em criticidade.
+### Gestão de EPIs
 
-- Autor: Gabriel Sobreira
+Controle de validade, conformidade e distribuição dos Equipamentos de Proteção Individual.
 
-Projeto desenvolvido para fins de estudo, portfólio e demonstração de competências em SQL, PostgreSQL, Power BI, Modelagem de Dados e Business Intelligence.
+### Gestão de Inspeções
+
+Análise dos resultados das inspeções realizadas e indicadores de qualidade.
+
+### Gestão de Não Conformidades
+
+Acompanhamento de severidade, status e prazos de correção.
+
+### Painel Gerencial SST
+
+Visão consolidada dos indicadores estratégicos e do nível de conformidade da operação.
+
+## Principais Indicadores
+
+* Índice SST Global
+* Índice de Criticidade
+* Índice de Risco SST
+* Conformidade de Treinamentos
+* Conformidade de EPIs
+* Conformidade de Inspeções
+* Quantidade de Não Conformidades Críticas
+* Quantidade de Não Conformidades Atrasadas
+
+## Arquivos SQL
+
+A pasta SQL contém:
+
+* schema.sql: estrutura das tabelas do banco de dados
+* views.sql: views utilizadas para preparação dos dados
+* consultas_analiticas.sql: consultas utilizadas para validação e análise dos indicadores
+
+## Objetivo do Projeto
+
+Este projeto foi desenvolvido com foco em prática de modelagem de dados, SQL, Power BI e construção de dashboards voltados para indicadores operacionais e gerenciais de SST.
+
+<img width="1014" height="588" alt="Pg1_Visao_Executiva" src="https://github.com/user-attachments/assets/834dddeb-2c5e-4ef3-9abc-da92ef1915ac" />
+<img width="1018" height="591" alt="Pg2_Gestao_Treinamentos" src="https://github.com/user-attachments/assets/18fe5dfc-504d-482a-80bc-de3ddb35c153" />
+<img width="1018" height="592" alt="Pg3_Gestao_EPIs" src="https://github.com/user-attachments/assets/4a3da66c-bbb9-4c36-857b-1feec3d77481" />
+<img width="1018" height="592" alt="Pg4_Gestao_Inspecoes" src="https://github.com/user-attachments/assets/b1243809-7749-4e50-9422-027ae270c4bb" />
+<img width="1020" height="593" alt="Pg5_Gestao_Nao_Conformidade" src="https://github.com/user-attachments/assets/d63bd7a7-7064-4bf2-9a31-bdf0dd4ac3c8" />
+<img width="1020" height="592" alt="Pg6_Painel_Gerencial_SST" src="https://github.com/user-attachments/assets/287b30ad-95ec-43bc-95e7-f6380b85f651" />
+
+
+
+
+
+
+
 
