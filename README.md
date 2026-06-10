@@ -1,92 +1,58 @@
-# SST System
+SST System
+Dashboard Executivo de Segurança e Saúde do Trabalho desenvolvido com PostgreSQL SQL Power BI e DAX
 
-Dashboard Executivo de Segurança e Saúde do Trabalho desenvolvido com PostgreSQL, SQL, Power BI e DAX.
+Visão Geral
 
-## Visão Geral
+O SST System foi desenvolvido com o objetivo de consolidar informações relacionadas à gestão de Segurança e Saúde do Trabalho em um único ambiente analítico
+O projeto permite acompanhar indicadores operacionais e gerenciais relacionados a treinamentos obrigatórios controle de EPIs inspeções de segurança e não conformidades apoiando o processo de tomada de decisão por meio de dados
 
-O SST System foi desenvolvido com o objetivo de consolidar informações relacionadas à gestão de Segurança e Saúde do Trabalho em um único ambiente analítico.
+- Tecnologias Utilizadas
+PostgreSQL
+SQL
+Power BI
+DAX
+GitHub
 
-O projeto permite acompanhar indicadores operacionais e gerenciais relacionados a treinamentos obrigatórios, controle de EPIs, inspeções de segurança e não conformidades, apoiando o processo de tomada de decisão por meio de dados.
-
-## Tecnologias Utilizadas
-
-* PostgreSQL
-* SQL
-* Power BI
-* DAX
-* GitHub
-
-## Estrutura do Projeto
-
+- Estrutura do Projeto
 O projeto está organizado nas seguintes pastas:
+images capturas das páginas do dashboard
+powerbi arquivo PBIX do projeto
+sql scripts de criação das tabelas views e consultas analíticas
 
-* images: capturas das páginas do dashboard
-* powerbi: arquivo PBIX do projeto
-* sql: scripts de criação das tabelas, views e consultas analíticas
-
-## Modelagem de Dados
-
+- Modelagem de Dados
 A estrutura foi desenvolvida utilizando um modelo relacional composto pelas entidades:
+Clientes
+Colaboradores
+Treinamentos
+EPIs
+Inspeções
+Não Conformidades
 
-* Clientes
-* Colaboradores
-* Treinamentos
-* EPIs
-* Inspeções
-* Não Conformidades
+- O dashboard contempla os seguintes módulos
+1) Visão Executiva SST: Acompanhamento consolidado dos principais indicadores de Segurança e Saúde do Trabalho
+2) Gestão de Treinamentos: Monitoramento de treinamentos vigentes vencidos e próximos do vencimento
+3) Gestão de EPIs: Controle de validade conformidade e distribuição dos Equipamentos de Proteção Individual
+4) Gestão de Inspeções: Análise dos resultados das inspeções realizadas e indicadores de qualidade
+5) Gestão de Não Conformidades: Acompanhamento de severidade status e prazos de correção
+6) Painel Gerencial SST: Visão consolidada dos indicadores estratégicos e do nível de conformidade da operação
 
-Além das tabelas principais, foram utilizadas views SQL para consolidação e preparação dos dados consumidos pelo Power BI.
+- Principais Indicadores
+Índice SST Global
+Índice de Criticidade
+Índice de Risco SST
+Conformidade de Treinamentos
+Conformidade de EPIs
+Conformidade de Inspeções
+Quantidade de Não Conformidades Críticas
+Quantidade de Não Conformidades Atrasadas
 
-## Funcionalidades
-
-O dashboard contempla os seguintes módulos:
-
-### Visão Executiva SST
-
-Acompanhamento consolidado dos principais indicadores de Segurança e Saúde do Trabalho.
-
-### Gestão de Treinamentos
-
-Monitoramento de treinamentos vigentes, vencidos e próximos do vencimento.
-
-### Gestão de EPIs
-
-Controle de validade, conformidade e distribuição dos Equipamentos de Proteção Individual.
-
-### Gestão de Inspeções
-
-Análise dos resultados das inspeções realizadas e indicadores de qualidade.
-
-### Gestão de Não Conformidades
-
-Acompanhamento de severidade, status e prazos de correção.
-
-### Painel Gerencial SST
-
-Visão consolidada dos indicadores estratégicos e do nível de conformidade da operação.
-
-## Principais Indicadores
-
-* Índice SST Global
-* Índice de Criticidade
-* Índice de Risco SST
-* Conformidade de Treinamentos
-* Conformidade de EPIs
-* Conformidade de Inspeções
-* Quantidade de Não Conformidades Críticas
-* Quantidade de Não Conformidades Atrasadas
-
-## Arquivos SQL
-
+- Arquivos SQL
 A pasta SQL contém:
+schema sql estrutura das tabelas do banco de dados
+views sql views utilizadas para preparação dos dados
+consultas analiticas sql consultas utilizadas para validação e análise dos indicadores
 
-* schema.sql: estrutura das tabelas do banco de dados
-* views.sql: views utilizadas para preparação dos dados
-* consultas_analiticas.sql: consultas utilizadas para validação e análise dos indicadores
-
-## Objetivo do Projeto
-
-Este projeto foi desenvolvido com foco em prática de modelagem de dados, SQL, Power BI e construção de dashboards voltados para indicadores operacionais e gerenciais de SST.
+- Objetivo do Projeto: Este projeto foi desenvolvido com foco em prática de modelagem de dados SQL Power BI e construção de dashboards voltados para indicadores operacionais e gerenciais de SST
 
 <img width="1014" height="588" alt="Pg1_Visao_Executiva" src="https://github.com/user-attachments/assets/834dddeb-2c5e-4ef3-9abc-da92ef1915ac" />
 <img width="1018" height="591" alt="Pg2_Gestao_Treinamentos" src="https://github.com/user-attachments/assets/18fe5dfc-504d-482a-80bc-de3ddb35c153" />
